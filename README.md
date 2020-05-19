@@ -18,5 +18,5 @@
 
 ### Project Structure
 - All component are stored in components folder
-- In for each component a serprate folder is created
+- For each component a serprate folder is created in components
 - This folder contains all files related to component such as js,css,test
