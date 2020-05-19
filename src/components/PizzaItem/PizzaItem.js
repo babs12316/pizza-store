@@ -6,7 +6,7 @@ const PizzaItem = ({id, name, price,pic,description }) => {
     const [cart,setCart] = useContext(CartContext);
     
    const handleClick=()=>{
-       console.log("i am clicked");
+      // console.log("i am clicked");
         const pizza={"id":id,"name":name,"price":price,"pic":pic,"description":description,"count":1}
         const alreadyAdded=cart.find(element => element.id === id);
         //console.log(`I am found ${cart.find(element => element.id === id)}`);
@@ -17,8 +17,8 @@ const PizzaItem = ({id, name, price,pic,description }) => {
            //if item is already added in cart then only increase its count
            const itemIndex=cart.findIndex(element=>element.id===id);
             cart[itemIndex].count+=1;  
-             console.log(`Cart is ${JSON.stringify(cart)}`)
-            console.log("i am already added!"+itemIndex)
+         //    console.log(`Cart is ${JSON.stringify(cart)}`)
+           // console.log("i am already added!"+itemIndex)
         }
 
       }
@@ -27,20 +27,12 @@ const PizzaItem = ({id, name, price,pic,description }) => {
      
           <div className="col-sm-6 col-lg-3">
             <img src={'/images/'+pic} alt={name}/>
-           
-
             <div className="title">{name}</div>
             <div className="description">{description}</div>
             <div className="price">Price: ${price}</div>
             <button onClick={handleClick}>Add to cart</button>
             </div>
-          
-            
-            
-
-           
-            
-          </React.Fragment>
+           </React.Fragment>
   );
 };
 
