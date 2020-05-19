@@ -1,0 +1,6 @@
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 500px 500px 500px;
+    padding: 10px;
+    justify-content: center;
+  }

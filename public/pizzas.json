@@ -1,0 +1,43 @@
+[
+    {
+        "id":1,
+        "name":"Buffalo Chicken",
+        "pic":"buffalo-chicken.jpg",
+        "description":"Grilled chicken, buffalo sauce, mozzarella, cheddar, red onions",
+        "price":8
+    },
+    {
+        "id":2,
+        "name":"Chicken BBQ",
+        "pic":"chicken-bbq.jpg",
+        "description":"Grilled chicken, bbq sauce, bacon, mozzarella, fresh basil, red onions",
+        "price":10
+    },
+    {
+        "id":3,
+        "name":"Supreme",
+        "pic":"supreme.jpg",
+        "description":"Pepperoni, fresh basil, mozzarella, italian sausage, bacon, mushrooms, red onions, black olives, green peppers, marinara sauce",
+        "price":9
+    },
+    {
+        "id":4,
+        "name":"Chicken Club",
+        "pic":"chicken-club.jpg",
+        "description":"Grilled chicken, cherry tomatoes, ricotta, fresh parsley, mozzarella, bacon, red onions",
+        "price":7
+    },
+    {
+        "id":5,
+        "name":"Hawaiian",
+        "pic":"hawaiian.jpg",
+        "description":"Ham, fresh pineapple, mozzarella, marinara sauce, fresh basil",
+        "price":12
+    },{
+        "id":6,
+        "name":"Spinach Feta",
+        "pic":"spinach-feta.jpg",
+        "description":"Fresh spinach, feta, ricotta, mozzarella, fresh parsley, red onions",
+        "price":15
+    }
+]

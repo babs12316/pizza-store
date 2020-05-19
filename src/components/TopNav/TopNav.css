@@ -1,0 +1,42 @@
+.topNav h2{
+    margin-bottom: 50px;
+}
+.topNav h2 a{
+    color:#ff6900;
+}
+.topNav{
+    padding: 10px;
+    border-bottom: 1px solid rgb(241, 242, 245);
+    margin-bottom: 40px;
+}
+.cart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15%;
+    width: 30px;
+    height: 30px;
+    background-color: #d05600;
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+#cart-basket{
+    top: 15px;
+    right: 15%;
+    width:60px;
+    height:60px;
+    position:absolute;
+}
+
+@media(max-width:767px){
+    #cart-basket,.cart-icon{
+        right:0px;
+    }
+}
