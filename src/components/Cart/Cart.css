@@ -64,6 +64,9 @@ button#decreaseCount{
         height: auto ;   
         margin:auto;   
     }
+    .cartItem{
+        height: auto;
+    }
     .cartItem .description{
         height:0
     }
@@ -88,4 +91,19 @@ button#decreaseCount{
  .order a{
      margin-left: -35%;
  }
+ .changeCurrency h5{
+     font-size: 12px;
+     float: left;
+ }
+ .changeCurrency select{
+     font-size: 12px;
+     float: left;
+ }
+ 
+.changeCurrency h6{
+    font-size: 12px;
+    float: right;
+    margin-top: -25px;
+}
+
 }

@@ -90,14 +90,14 @@ const Cart = () => {
       {cart.length > 0 && 
     
         <div className="row changeCurrency">
-           <div className=" col-xs-1 col-sm-6">
-        <h6>Change currency</h6>
+           <div className=" col-xs-6 col-sm-6">
+        <h5>Currency</h5>
       <select onChange={(e)=>setCurrency(e.target.value)}>
          <option value="USD">USD</option>
         <option value="EUR">Euro</option>
        </select>
        </div>
-       <div className=" col-xs-1 col-sm-6" >
+       <div className=" col-xs-6 col-sm-6" >
       <h6 > Total: {currency==='EUR'?'€'+ (totalPrice*1.1*0.91).toFixed(2):'$'+ (totalPrice*1.1).toFixed(2)}
       <p className="note">10% added as a delivery cost </p>
       </h6>
