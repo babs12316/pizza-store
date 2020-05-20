@@ -108,12 +108,16 @@ const Cart = () => {
       }
       {cart.length > 0 && (
         <div className="row order">
-          <Link to="/" className="col-sm-9">
+          <div className="col-xs-6 col-sm-6">
+          <Link to="/" id="backMenu" >
             Back to Menu
           </Link>
-          <button onClick={handleOrder} id="orderNow" className="col-sm-2">
+          </div>
+          <div className="col-xs-6 col-sm-6">
+          <button onClick={handleOrder} id="orderNow" >
             Order Now!
           </button>
+          </div>
         </div>
       )}
     </React.Fragment>

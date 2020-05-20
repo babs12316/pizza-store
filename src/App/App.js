@@ -5,10 +5,12 @@ import PizzaList from "../components/PizzaList";
 import CartContext from "../CartContext";
 import Cart from "../components/Cart";
 import TopNav from "../components/TopNav";
+import BottomNav from "../components/BottomNav";
 
 function App() {
   const [cart, setCart] = useState([]);
   return (
+    <React.Fragment>
     <div className="App container">
       <Router>
         <CartContext.Provider value={[cart, setCart]}>
@@ -16,8 +18,10 @@ function App() {
           <Route exact path="/" component={PizzaList} />
           <Route exact path="/cart" component={Cart} />
         </CartContext.Provider>
-      </Router>
+        </Router>
     </div>
+    <BottomNav></BottomNav>
+    </React.Fragment>
   );
 }
 
