@@ -1,6 +1,6 @@
-import React, { useState } from "./node_modules/react";
+import React, { useState } from "react";
 import "./App.css";
-import { Route, BrowserRouter as Router } from "./node_modules/react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import PizzaList from "../components/PizzaList/PizzaList";
 import CartContext from "../CartContext";
 import Cart from "../components/Cart/Cart";
