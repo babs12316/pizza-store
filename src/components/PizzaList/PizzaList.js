@@ -12,7 +12,7 @@ const PizzaList = () => {
 
   const fetchData = async () => {
     try {
-      const result = await fetch("http://localhost:3000/pizzas.json");
+      const result = await fetch("/pizzas.json");
       const data = await result.json();
       setPizzaData(data);
     } catch (err) {
