@@ -1,3 +1,8 @@
+.cartItem{
+    border-bottom: 1px solid rgb(241, 242, 245);
+    margin-top: 30px;
+    height: 150px;
+}
 .cartItemImage{
     width:100px;
     height:100px;
@@ -17,6 +22,9 @@ h6.col-sm-4{
 }
 .order{
     margin-top: 100px;
+}
+.changeCurrency{
+    margin-top: 25px;
 }
 .item{
     border-bottom: 1px solid rgb(241, 242, 245);
@@ -44,6 +52,11 @@ button#increaseCount{
 button#decreaseCount{
     margin-left: 10px;
 }
+.note{
+  font-size: 12px;
+  font-style: italic;   
+}
+
 @media(max-width:575px){
     .cartItem .cartItemImage{
         display: block;

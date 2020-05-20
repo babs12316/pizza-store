@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../../CartContext";
 import "./Cart.css";
 
 const Cart = () => {
   const [cart, setCart] = useContext(CartContext);
+  const[currency,setCurrency]=useState('USD');
 
   const reducer = (accumulator, item) => {
     return accumulator + item.price * item.count;
@@ -74,7 +75,7 @@ const Cart = () => {
                 -
               </button>
             </div>
-            <div className="price col-sm-1">{item.price * item.count}</div>
+            <div className="price col-sm-1">{currency==='EUR'?item.price* 0.91 * item.count:item.price*item.count}</div>
             <div className="col-sm-1">
               <img
                 src={"/images/delete.svg"}
@@ -86,9 +87,25 @@ const Cart = () => {
           </div>
         ))
       )}
-      {cart.length > 0 && (
-        <h6 className=" col-xs-1 col-sm-4"> Total: ${totalPrice}</h6>
-      )}
+      {cart.length > 0 && 
+    
+        <div className="row changeCurrency">
+           <div className=" col-xs-1 col-sm-6">
+        <h6>Change currency</h6>
+      <select onChange={(e)=>setCurrency(e.target.value)}>
+         <option value="USD">USD</option>
+        <option value="EUR">Euro</option>
+       </select>
+       </div>
+       <div className=" col-xs-1 col-sm-6" >
+      <h6 > Total: {currency==='EUR'?'€'+ (totalPrice*1.1*0.91).toFixed(2):'$'+ (totalPrice*1.1).toFixed(2)}
+      <p className="note">10% added as a delivery cost </p>
+      </h6>
+      </div>
+      </div>
+ 
+       
+      }
       {cart.length > 0 && (
         <div className="row order">
           <Link to="/" className="col-sm-9">

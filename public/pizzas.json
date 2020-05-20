@@ -39,5 +39,17 @@
         "pic":"spinach-feta.jpg",
         "description":"Fresh spinach, feta, ricotta, mozzarella, fresh parsley, red onions",
         "price":15
+    },{
+        "id":7,
+        "name":"Sausage",
+        "pic":"sausage.jpg",
+        "description":"Double italian sausage, mozzarella, marinara sauce, fresh basil",
+        "price":9
+    },{
+        "id":8,
+        "name":"Pepperoni",
+        "pic":"pepperoni.jpg",
+        "description":"Double pepperoni, mozzarella, marinara sauce, fresh basil",
+        "price":9
     }
 ]
