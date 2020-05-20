@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from "./node_modules/react";
 import "./App.css";
-import { Route, BrowserRouter as Router } from "react-router-dom";
-import PizzaList from "../components/PizzaList";
+import { Route, BrowserRouter as Router } from "./node_modules/react-router-dom";
+import PizzaList from "../components/PizzaList/PizzaList";
 import CartContext from "../CartContext";
-import Cart from "../components/Cart";
-import TopNav from "../components/TopNav";
-import BottomNav from "../components/BottomNav";
+import Cart from "../components/Cart/Cart";
+import TopNav from "../components/TopNav/TopNav";
+import BottomNav from "../components/BottomNav/BottomNav";
 
 function App() {
   const [cart, setCart] = useState([]);
