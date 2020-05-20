@@ -1,1 +1,1 @@
-web: node -r esm ./src/index.js
+web: node --experimental-modules ./src/index.js
